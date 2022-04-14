@@ -1,16 +1,16 @@
 
-
 import React, { Component } from 'react'
 import Header from '../../common/header/Header'
 import './Home.css'
 import './ImageList'
 import SingleLineImageList from './ImageList'
-import { MuiImageList } from './MuiImageList'
+import InputsFunction, { MuiImageList } from './MuiImageList'
+
+
 // import SingleLineImageList from './ImageList'
 
 
 // import asset from '../Assets'
-
 
 
 
@@ -32,10 +32,9 @@ export default class Home extends Component {
               <div id='right'>
                
               </div>
-
+                <InputsFunction/>
           </div>
-        
-      {/* {  <SingleLineImageList/>} */}
+          
       </div>
     )
   }
