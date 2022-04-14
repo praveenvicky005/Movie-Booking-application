@@ -4,12 +4,14 @@ import './index.css';
 
 
 import reportWebVitals from './reportWebVitals';
+import Details from './screens/details/Details';
 
-import Home from './screens/home/Home';
+// import Home from './screens/home/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home></Home>
+   {/* { <Home></Home>} */}
+   <Details/>
 
   </React.StrictMode>,
   document.getElementById('root')

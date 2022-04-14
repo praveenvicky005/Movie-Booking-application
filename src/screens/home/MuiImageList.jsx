@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@material-ui/core/ImageListItem";
@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const MuiImageList = () => {
     const classes = useStyles();
+    const [para, setPara] = useState("");
     return (
         <ImageList
             sx={{ width: 350, height: 350 }}
@@ -55,7 +56,7 @@ export const MuiImageList = () => {
         >
             {moviesData.map((item) => (
                 <ImageListItem key={item.img}>
-                    <img src={item.poster_url} alt={item.title} className="image" />
+                    <img src={item.poster_url} alt={item.title} className="image" onClick={ item.poster_url} />
                     {
                         <ImageListItemBar
                             title={item.title}
